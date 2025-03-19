@@ -16,16 +16,35 @@ body {
     margin: 20px 0; 
 }
 
+.right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 0 5rem;
     font-size: 50px;
     font-family: 'Birthstone', cursive;
     font-weight: bold;
     color: black;
-    padding-left: 50px;
+
+
+    position: fixed;
+    
+    top: 0;
+    width: 100%;
+
+}
+.new-user-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .login-box {
@@ -33,12 +52,11 @@ body {
     padding: 15px;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    position: absolute;
-    top: 20px;
-    right: 50px;
+ 
 }
 
 input {
@@ -87,8 +105,8 @@ a {
 
 .divider {
     display: inline-block;
-    width: 1px;
-    height: 12px;
+    width: 2px;
+    height: 16px;
     background: black;
     margin: 0 8px;
 }
